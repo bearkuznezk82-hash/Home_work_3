@@ -1,0 +1,18 @@
+queries = [
+    'смотреть сериалы онлайн',
+    'новости спорта',
+    'афиша кино',
+    'курс доллара',
+    'сериалы этим летом',
+    'курс по питону',
+    'сериалы про спорт',
+]
+total_query = len(queries)
+my_set = {len(j.split()) for j in queries}
+count_queries = [len(j.split()) for j in queries]
+for i in my_set:
+    count = 0
+    for j in count_queries:
+        if i == j:
+            count += 1
+    print(f'Поисковых запросов, содержащих {i} слов(а): {count / total_query*100:.2f}%')
