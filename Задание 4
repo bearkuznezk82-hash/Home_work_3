@@ -1,0 +1,7 @@
+stats = {'facebook': 55, 'yandex': 115, 'vk': 120, 'google': 99, 'email': 42, 'ok': 98}
+max_ = 0
+for i in stats:
+    if stats[i] > max_:
+       max_ = stats[i]
+       leader = i
+print(f"Максимальный объем продаж на рекламном канале: {leader}")
